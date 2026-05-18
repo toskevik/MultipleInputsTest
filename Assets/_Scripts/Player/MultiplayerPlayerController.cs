@@ -13,6 +13,12 @@ namespace Player
         private void Awake()
         {
             _playerInput = GetComponent<PlayerInput>();
+            
+        }
+
+        private void OnEnable()
+        {
+            
         }
 
         // This method will be hooked up to the PlayerInput component's Unity Event
@@ -33,7 +39,7 @@ namespace Player
         private void Update()
         {
             // Calculate frame-rate independent movement
-            Vector3 moveDirection = new Vector3(_moveInput.x, 0, _moveInput.y);
+            var moveDirection = new Vector3(_moveInput.x, 0, _moveInput.y);
             transform.Translate(moveDirection * (moveSpeed * Time.deltaTime), Space.World);
         }
     }

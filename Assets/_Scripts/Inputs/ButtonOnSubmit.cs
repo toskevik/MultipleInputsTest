@@ -5,12 +5,7 @@ public class ButtonOnSubmit : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Having additional control with clickable buttons would be possible 
+        // if a script that implements a bypass of the OnClick event
     }
 }
